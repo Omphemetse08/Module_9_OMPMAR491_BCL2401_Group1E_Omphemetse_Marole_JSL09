@@ -33,3 +33,15 @@ fetch("https://api.coingecko.com/api/v3/coins/dogecoin")
     <p>$${data.market_data.low_24h.usd}</p>
     `;
   });
+
+// log the current time to console, formatted and display the current time on the dashboard
+function getCurrentTime() {
+  const date = new Date();
+  document.getElementById("time").textContent = date.toLocaleTimeString(
+    "en-us",
+    {
+      timeStyle: "medium",
+    }
+  );
+}
+setInterval(getCurrentTime, 1000);

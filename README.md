@@ -1,42 +1,33 @@
-# [JSL09] Submission: Personal Dashboard Chrome Extension
+# module_09_OMPMAR491_BCL2401_Group1E_Omphemetse_Marole_JSL09
 
-You will:
-1. Use the provided Starter Code Repository: https://github.com/CodeSpace-Academy/Module_09_StudentNo_Classcode_Group_Name-Surname_JSL09
-2. Code your solution.
-3. Commit changes to your GitHub repository.
-4. Submit the GitHub Repository Link to the LMS [JSL09] Submission Project Tab.
+# This project fetches data from various APIs to dynamically update the background image based on nature photos from Unsplash and display weather information based on the user's current location.
 
-In this project you will follow along with the Scrimba Promise Rejection capstone to create a Personal Dashboard for your Chrome Browser. Note you are only required to submit the project code. You DO NOT need to submit the deployed Chrome extension. 
+# HOW TO RUN THE PROJECT
 
-Scrimba Reference Link: https://scrimba.com/learn/frontend/promise-rejection-coc4a4e4d8d208ab33b190dd5
+- Open the index.html file in your web browser.
 
-![](<[JSL09 Solution].png>)
-Note that this background image is dynamically generated so your's will look different.
+# DEPENDECIES
 
-## What You Need to Do:
+- This project relies on the Fetch API for making HTTP requests.
+- It also uses navigator.geolocation to get user's current location.
+- Ensure you have an active internet connection to fetch data from APIs, without internet the code wont run.
 
-1. Clone the provided Starter Code Repository to your local development environment (e.g., VSCode): https://github.com/CodeSpace-Academy/Module_09_StudentNo_Classcode_Group_Name-Surname_JSL09
-2. Open the cloned project in your code editor.
-3. Code your solution for the challenge as per the provided instructions.
-4. If you have coded your Personal Dashboard challenge in Scrimba, you will need to download the zip folder of your project files. Unzip the project files into your JSL09 project repo on GitHub. Make sure to NOT use the Scrimba README. Instead you will keep your starter code README.
-5. Commit your changes to your local Git repository with meaningful commit messages.
-6. Push your local Git repository to your GitHub account.
-7. Verify that the changes have been successfully pushed to your GitHub repository.
+# USAGE
 
-![alt text](download-scrimba-files.png)
-You can download your Scrimba files in the bottom right hand corner of the Scrimba IDE panel. 
+- The background image will be updated to a random nature photo fetched from Unsplash.
+- Weather information will bw displayed based on user's current location.
 
-## What You Need to Include:
+# ERROR HANDLING
 
-1. Ensure that your code includes the necessary modifications to meet the challenge requirements.
-2. Your GitHub repository should contain the updated code files.
+- If there are any errors during the API requests(network issues or unavilable data),appropriate error message will bw displayed in the console.
+- The beackground image will default to a predefined photo, and weatger data will not be displayed if there are errors.
 
-## How We'll Assess Your Work:
+# Background photos are fetched from the Unsplashe API.
 
-1. We will review your GitHub repository to ensure that it contains the updated code files.
-2. We will assess the modifications made to the code to verify that they effectively meet the challenge requirements.
-3. We will consider the commit history and meaningful commit messages to evaluate your coding process.
+# Weather data is fetched from OpenWeatherMap API.
 
+# Cryptocurrrency data is fetched from the CoinGecko API.
 
+# CHALLENGES
 
-
+- The weather/currency image were not appearing.

@@ -22,11 +22,11 @@
 - If there are any errors during the API requests(network issues or unavilable data),appropriate error message will bw displayed in the console.
 - The beackground image will default to a predefined photo, and weatger data will not be displayed if there are errors.
 
-# Background photos are fetched from the Unsplashe API.
+* Background photos are fetched from the Unsplashe API.
 
-# Weather data is fetched from OpenWeatherMap API.
+* Weather data is fetched from OpenWeatherMap API.
 
-# Cryptocurrrency data is fetched from the CoinGecko API.
+* Cryptocurrrency data is fetched from the CoinGecko API.
 
 # CHALLENGES
 

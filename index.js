@@ -2,7 +2,11 @@ try {
   const res = await fetch(
     "https://apis.scrimba.com/unsplash/photos/random?orientation=landscape&query=nature"
   );
+
+  //fetching the image
   const data = await res.json();
+
+  //setting the Background Image and Auther
   document.body.style.backgroundImage = `url(${data.urls.regular})`;
   document.getElementById("author").textContent = `By: ${data.user.name}`;
 } catch (err) {
@@ -10,18 +14,17 @@ try {
 )`;
   document.getElementById("author").textContent = `By: Dodi Achmad`;
 }
-
-/**
- * Challenge: Update the code below and in the
- * getCurrentLocation callback to use try...catch
- */
-
+//Displaying Dogecoin Information
 try {
+  // Fetching Dogecoin Data
   const res = await fetch("https://api.coingecko.com/api/v3/coins/dogecoin");
   if (!res.ok) {
     throw Error("Something went wrong");
   }
   const data = await res.json();
+
+  // Displaying Information
+
   document.getElementById("crypto-top").innerHTML = `
         <img src=${data.image.small} />
         <span>${data.name}</span>
@@ -32,9 +35,10 @@ try {
         <p>👇: $${data.market_data.low_24h.usd}</p>
     `;
 } catch (err) {
+  // Error Logging
   console.error(err);
 }
-
+// Displaying Current Time
 function getCurrentTime() {
   const date = new Date();
   document.getElementById("time").textContent = date.toLocaleTimeString(
@@ -45,6 +49,7 @@ function getCurrentTime() {
 
 setInterval(getCurrentTime, 1000);
 
+// Displaying Weather Information (with Error Handling)
 navigator.geolocation.getCurrentPosition(async (position) => {
   try {
     const res = await fetch(
